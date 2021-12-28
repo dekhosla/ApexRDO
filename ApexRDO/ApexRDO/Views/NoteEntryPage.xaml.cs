@@ -70,9 +70,10 @@ namespace ApexRDO.Views
         }
         private async void BacktoHomePage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AboutPage());
-            //await Shell.Current.GoToAsync("../AboutPage");
-           // await Shell.Current.GoToAsync(nameof(AboutPage));
+            //await Navigation.PushAsync(new AboutPage());
+            //await Navigation.PushModalAsync(new AboutPage());
+            await Shell.Current.GoToAsync($"//AboutPage");
+            // await Shell.Current.GoToAsync(nameof(AboutPage));
         }
     }
 }

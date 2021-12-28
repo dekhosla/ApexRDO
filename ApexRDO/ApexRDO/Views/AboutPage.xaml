@@ -3,7 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ApexRDO.Views.AboutPage"
              xmlns:vm="clr-namespace:ApexRDO.ViewModels"
-             Title="ApexRDO">
+             Title="ApexRDO"
+    
+             >
+    <!--Shell.NavBarIsVisible="false"-->
+    <StackLayout>
+    <StackLayout.Padding>
+        <OnPlatform x:TypeArguments="Thickness" 
+            Android="0, -10, 0, 0" 
+            iOS="0, 15, 0, 0"/>
+    </StackLayout.Padding>
+        <BoxView BackgroundColor="Yellow">
+            <BoxView.Margin>
+                <OnPlatform x:TypeArguments="Thickness" iOS="0, -30, 0, -15"/>
+            </BoxView.Margin>
+        </BoxView>
+    </StackLayout>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="home" Priority="0" />
         <ToolbarItem IconImageSource="icon_about.png" Priority="1" />
@@ -53,6 +68,10 @@
                         TextColor="White" />
                 <Button Margin="0,1,0,0" Text="Scan"
                        Clicked="NavigateButton_OnClickedThird"
+                        BackgroundColor="#0C234B"
+                        TextColor="White" />
+                <Button Margin="0,1,0,0" Text="Gis MAP"
+                       Clicked="NavigateButton_OnClickedFourth"
                         BackgroundColor="#0C234B"
                         TextColor="White" />
             </StackLayout>

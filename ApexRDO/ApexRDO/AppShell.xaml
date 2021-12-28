@@ -26,8 +26,11 @@
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
-        
-                
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#6eb43a"/>
+                <Setter Property="BackgroundColor" Value="#6eb43a"/>
+            </Style>
+
         </ResourceDictionary>
     </Shell.Resources>
     

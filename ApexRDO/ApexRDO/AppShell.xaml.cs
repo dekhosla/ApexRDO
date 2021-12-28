@@ -14,7 +14,7 @@ namespace ApexRDO
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));            
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(NoteEntryPage), typeof(NoteEntryPage));
-            Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
+            Routing.RegisterRoute($"nameof(AboutPage)", typeof(AboutPage));
         }
 
     }
