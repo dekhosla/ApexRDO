@@ -1,4 +1,4 @@
-﻿using ArcGISRuntimeXamarin.Samples.AddPointSceneLayer;
+﻿//using ArcGISRuntimeXamarin.Samples.AddPointSceneLayer;
 using System;
 using System.ComponentModel;
 using Xamarin.Forms;
@@ -31,7 +31,7 @@ namespace ApexRDO.Views
         {
            // await Navigation.PushModalAsync(new ItemsPage());
            // await Navigation.PushModalAsync(new AddPointSceneLayer());
-            await Navigation.PushAsync(new AddPointSceneLayer());
+            //await Navigation.PushAsync(new AddPointSceneLayer());
         }
     }
 }

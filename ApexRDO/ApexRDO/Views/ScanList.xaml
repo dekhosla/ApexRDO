@@ -1,12 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ApexRDO.Views.ScanList">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="ApexRDO.Views.ScanList"
+             Title="Scan List">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="ScanList" Clicked="ScanButton" />
+        
+        <ToolbarItem Text="home" Priority="0" Clicked="BacktoHomePage" />
+        <ToolbarItem IconImageSource="icon_about.png" Priority="1" />
+    </ContentPage.ToolbarItems>
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                --><!--<Label Text="My First App" FontSize="Title"/>--><!--
+
+                <Button Margin="0,10,0,0" Text="Api Call"
+                        Clicked="btnScan"
+                        BackgroundColor="#0C234B"
+                        TextColor="White" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>-->
+    <StackLayout Margin="20,5,20,20">
+        <CollectionView x:Name="collectionView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Name}"
+                               FontSize="Medium" />                      
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
 </ContentPage>

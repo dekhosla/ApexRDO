@@ -9,15 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexRDO.Android", "ApexRDO\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexRDO.iOS", "ApexRDO\ApexRDO.iOS\ApexRDO.iOS.csproj", "{E318B3E0-AA87-475D-9E0A-229218319012}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexRDO", "ApexRDO\ApexRDO\ApexRDO.csproj", "{8E64F4B5-4131-40E2-A119-BA0CAE219EA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApexRDO", "ApexRDO\ApexRDO\ApexRDO.csproj", "{8E64F4B5-4131-40E2-A119-BA0CAE219EA0}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ArcGISRuntime.Samples.Shared", "ApexRDO\ArcGISRuntime.Samples.Shared\ArcGISRuntime.Samples.Shared.shproj", "{0AD85845-0BA1-4DC9-8C32-E6FD7632E32D}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		ApexRDO\ArcGISRuntime.Samples.Shared\ArcGISRuntime.Samples.Shared.projitems*{0ad85845-0ba1-4dc9-8c32-e6fd7632e32d}*SharedItemsImports = 13
-		ApexRDO\ArcGISRuntime.Samples.Shared\ArcGISRuntime.Samples.Shared.projitems*{8e64f4b5-4131-40e2-a119-ba0cae219ea0}*SharedItemsImports = 5
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
